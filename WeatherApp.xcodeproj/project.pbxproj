@@ -13,7 +13,6 @@
 		3A0D59F825DC30B600754EA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0D59F625DC30B600754EA1 /* Main.storyboard */; };
 		3A0D59FD25DC30B700754EA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0D59FB25DC30B700754EA1 /* LaunchScreen.storyboard */; };
 		3A123CD125E34CC000E0EF9E /* MockWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A123CD025E34CC000E0EF9E /* MockWeatherViewModel.swift */; };
-		3A1F496125E43B98009863E6 /* WeatherAppTests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = 3AB9B62D25E054E400F118BF /* WeatherAppTests.xctest */; };
 		3A46803B25DDB0F300F89DBC /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A46803A25DDB0F300F89DBC /* HTTPError.swift */; };
 		3A46804325DDBFA900F89DBC /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A46804225DDBFA900F89DBC /* AlertHelper.swift */; };
 		3A46804725DDD1DC00F89DBC /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A46804525DDD1DC00F89DBC /* WeatherTableViewCell.swift */; };
@@ -285,7 +284,6 @@
 				3AF9915425E30E7100ED9D0C /* dallas.json in Resources */,
 				3AF9916825E31FDA00ED9D0C /* new+york.json in Resources */,
 				3AF9916425E318EB00ED9D0C /* austin.json in Resources */,
-				3A1F496125E43B98009863E6 /* WeatherAppTests.xctest in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
