@@ -13,6 +13,7 @@
 		3A0D59F825DC30B600754EA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0D59F625DC30B600754EA1 /* Main.storyboard */; };
 		3A0D59FD25DC30B700754EA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0D59FB25DC30B700754EA1 /* LaunchScreen.storyboard */; };
 		3A123CD125E34CC000E0EF9E /* MockWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A123CD025E34CC000E0EF9E /* MockWeatherViewModel.swift */; };
+		3A1F496125E43B98009863E6 /* WeatherAppTests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = 3AB9B62D25E054E400F118BF /* WeatherAppTests.xctest */; };
 		3A46803B25DDB0F300F89DBC /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A46803A25DDB0F300F89DBC /* HTTPError.swift */; };
 		3A46804325DDBFA900F89DBC /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A46804225DDBFA900F89DBC /* AlertHelper.swift */; };
 		3A46804725DDD1DC00F89DBC /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A46804525DDD1DC00F89DBC /* WeatherTableViewCell.swift */; };
@@ -51,7 +52,7 @@
 		3A0D59F725DC30B600754EA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A0D59FC25DC30B700754EA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A0D59FE25DC30B700754EA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A123CD025E34CC000E0EF9E /* MockWeatherViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockWeatherViewModel.swift; path = ../../../.Trash/MockWeatherViewModel.swift; sourceTree = "<group>"; };
+		3A123CD025E34CC000E0EF9E /* MockWeatherViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockWeatherViewModel.swift; sourceTree = "<group>"; };
 		3A46803A25DDB0F300F89DBC /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
 		3A46804225DDBFA900F89DBC /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 		3A46804525DDD1DC00F89DBC /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
@@ -61,7 +62,7 @@
 		3A46805725DDE91500F89DBC /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
 		3A46805A25DDE99900F89DBC /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		3A46805D25DDECAA00F89DBC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		3A96D2C125E3095A00D1F8EF /* WeatherAppTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeatherAppTests.swift; path = ../../../.Trash/WeatherAppTests.swift; sourceTree = "<group>"; };
+		3A96D2C125E3095A00D1F8EF /* WeatherAppTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherAppTests.swift; sourceTree = "<group>"; };
 		3AA2115825DCD41A0033FC83 /* WeatherViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		3AA2115C25DCD54D0033FC83 /* WeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		3AB9B62425DFE8F100F118BF /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
@@ -284,6 +285,7 @@
 				3AF9915425E30E7100ED9D0C /* dallas.json in Resources */,
 				3AF9916825E31FDA00ED9D0C /* new+york.json in Resources */,
 				3AF9916425E318EB00ED9D0C /* austin.json in Resources */,
+				3A1F496125E43B98009863E6 /* WeatherAppTests.xctest in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

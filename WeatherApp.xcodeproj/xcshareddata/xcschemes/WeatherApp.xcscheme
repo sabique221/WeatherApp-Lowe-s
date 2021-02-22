@@ -21,8 +21,8 @@
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
+            buildForTesting = "NO"
+            buildForRunning = "NO"
             buildForProfiling = "YES"
             buildForArchiving = "NO"
             buildForAnalyzing = "NO">
@@ -31,6 +31,20 @@
                BlueprintIdentifier = "3AF9916E25E3430800ED9D0C"
                BuildableName = "WeatherAppUITests.xctest"
                BlueprintName = "WeatherAppUITests"
+               ReferencedContainer = "container:WeatherApp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3AB9B62C25E054E400F118BF"
+               BuildableName = "WeatherAppTests.xctest"
+               BlueprintName = "WeatherAppTests"
                ReferencedContainer = "container:WeatherApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -49,16 +63,6 @@
                BlueprintIdentifier = "3AB9B62C25E054E400F118BF"
                BuildableName = "WeatherAppTests.xctest"
                BlueprintName = "WeatherAppTests"
-               ReferencedContainer = "container:WeatherApp.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3AF9916E25E3430800ED9D0C"
-               BuildableName = "WeatherAppUITests.xctest"
-               BlueprintName = "WeatherAppUITests"
                ReferencedContainer = "container:WeatherApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
