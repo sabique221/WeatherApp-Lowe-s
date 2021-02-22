@@ -10,7 +10,7 @@ import XCTest
 
 class WeatherUnitAppTests: XCTestCase {
     
-    let vc = WeatherViewController.init(city: "New York", ViewModel: MockWeatherViewModel.init(false)) //set to true to generate failure to access data
+    let vc = WeatherViewController.init(city: "Dallas", ViewModel: MockWeatherViewModel.init(false)) //set to true to generate failure to access data
     
     func test_view_model(){
         
