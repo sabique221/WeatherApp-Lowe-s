@@ -49,7 +49,7 @@ class WeatherViewController: UIViewController {
             }
             
         }
-        self.navigationItem.title = city!.capitalized
+        self.navigationItem.title = city!.capitalized.replacingOccurrences(of: "+", with: " ")
         navigationController?.navigationBar.clearsContextBeforeDrawing = true
         navigationController?.navigationBar.clipsToBounds = true
         navigationController?.navigationBar.backgroundColor = UIColor.systemBlue
