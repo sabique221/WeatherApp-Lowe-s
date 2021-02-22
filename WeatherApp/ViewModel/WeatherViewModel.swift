@@ -15,7 +15,7 @@ class WeatherViewModel: WeatherViewModelProtocol {
             comp(.failure(.invalidResponse))
             return
         }
-        DispatchQueue.global(qos: .userInitiated).async {
+        DispatchQueue.global(qos: .utility).async {
         URLSession.shared.dataTask(with: apiURL) { (data, response, error) in
             
             if let _ = error {
