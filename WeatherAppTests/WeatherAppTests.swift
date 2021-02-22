@@ -16,7 +16,7 @@ class WeatherUnitAppTests: XCTestCase {
         
         let expecation = self.expectation(description: "JSON response from file was successful")
         
-        vc.ViewModel!.getAllWeatherData(city: "new york") { result in
+        vc.ViewModel!.getAllWeatherData(city: vc.city!) { result in
             
             switch result {
             case .success(let list):
