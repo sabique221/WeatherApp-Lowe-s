@@ -33,7 +33,6 @@ class WeatherViewController: UIViewController {
         table.register(UINib(nibName: "WeatherTableViewCell", bundle: nil), forCellReuseIdentifier: "weatherCell")
         ViewModel?.getAllWeatherData(city: city!, forModel: WeatherModel.self) { [weak self] (result) in
             guard let self = self else {return}
-            let alert = AlertHelper(vc: self)
             switch result {
             case .success(let list):
                 self.lists = list.list
@@ -44,7 +43,7 @@ class WeatherViewController: UIViewController {
             case .failure(let error):
                 DispatchQueue.main.async {
                     self.table.isHidden = true
-                    alert.showAlert(title: "Error", message: error.rawValue)
+                    AlertHelper.showAlert(title: "Error", message: error.rawValue, overViewController: self)
                 }
             }
             
