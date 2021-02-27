@@ -31,12 +31,12 @@ class WeatherViewController: UIViewController {
         table.delegate = self
         table.dataSource = self
         table.register(UINib(nibName: "WeatherTableViewCell", bundle: nil), forCellReuseIdentifier: "weatherCell")
-        ViewModel?.getAllWeatherData(city: city!) { [weak self] result in
+        ViewModel?.getAllWeatherData(city: city!, forModel: WeatherModel.self) { [weak self] (result) in
             guard let self = self else {return}
             let alert = AlertHelper(vc: self)
             switch result {
             case .success(let list):
-                self.lists = list
+                self.lists = list.list
                 DispatchQueue.main.async {
                     self.table.reloadData()
                     self.table.isHidden = false
@@ -56,6 +56,7 @@ class WeatherViewController: UIViewController {
         navigationController?.viewRespectsSystemMinimumLayoutMargins = false
         
     }
+    
 }
 
 extension WeatherViewController: UITableViewDataSource, UITableViewDelegate {

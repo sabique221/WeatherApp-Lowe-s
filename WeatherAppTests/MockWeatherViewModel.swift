@@ -27,7 +27,7 @@ class MockWeatherViewModel: WeatherViewModelProtocol {
         
     }
     
-    func getAllWeatherData(city: String, comp: @escaping (Result<[List], HTTPError>) -> Void) {
+    func getAllWeatherData<T: Codable>(city: String, forModel model: T.Type, comp: @escaping (Result<T,HTTPError>)-> Void)  {
         viewModelWasCalled = true
         
         if  shouldReturnError {
@@ -44,8 +44,8 @@ class MockWeatherViewModel: WeatherViewModelProtocol {
         
         
         do{
-            let jsonData = try JSONDecoder().decode(WeatherModel.self, from: data)
-            comp(.success(jsonData.list))
+            let jsonData = try JSONDecoder().decode(T.self, from: data)
+            comp(.success(jsonData))
         } catch {
             comp(.failure(.invalidData))
         }

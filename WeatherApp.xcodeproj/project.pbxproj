@@ -25,6 +25,7 @@
 		3A96D2C225E3095A00D1F8EF /* WeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A96D2C125E3095A00D1F8EF /* WeatherAppTests.swift */; };
 		3AA2115925DCD41A0033FC83 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA2115825DCD41A0033FC83 /* WeatherViewModel.swift */; };
 		3AA2115D25DCD54D0033FC83 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA2115C25DCD54D0033FC83 /* WeatherModel.swift */; };
+		3AA5087C25E9E3D200E446E5 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA2115C25DCD54D0033FC83 /* WeatherModel.swift */; };
 		3AB9B62525DFE8F100F118BF /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB9B62425DFE8F100F118BF /* ViewModelProtocol.swift */; };
 		3AF757A925DC85B8008A774F /* RemoveDuplicates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF757A825DC85B8008A774F /* RemoveDuplicates.swift */; };
 		3AF757BD25DCA3B1008A774F /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF757BC25DCA3B1008A774F /* WeatherViewController.swift */; };
@@ -317,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A96D2C225E3095A00D1F8EF /* WeatherAppTests.swift in Sources */,
+				3AA5087C25E9E3D200E446E5 /* WeatherModel.swift in Sources */,
 				3A123CD125E34CC000E0EF9E /* MockWeatherViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,9 +7,10 @@
 import UIKit
 import Foundation
 class WeatherViewModel: WeatherViewModelProtocol {
+    
 
     
-    func getAllWeatherData(city: String, comp: @escaping (Result<[List],HTTPError>)-> Void) {
+    func getAllWeatherData<T: Codable>(city: String, forModel model: T.Type, comp: @escaping (Result<T,HTTPError>)-> Void) {
         
         guard let apiURL = URL(string: "https://api.openweathermap.org/data/2.5/forecast?q=" + "\(city)" + "&appid=65d00499677e59496ca2f318eb68c049") else {
             comp(.failure(.invalidResponse))
@@ -36,8 +37,8 @@ class WeatherViewModel: WeatherViewModelProtocol {
                         return
                     }
                     do {
-                        let weatherResponse = try JSONDecoder().decode(WeatherModel.self, from: data)
-                        comp(.success(weatherResponse.list))
+                        let weatherResponse = try JSONDecoder().decode(T.self, from: data)
+                        comp(.success(weatherResponse))
                         
                         
                     }catch {

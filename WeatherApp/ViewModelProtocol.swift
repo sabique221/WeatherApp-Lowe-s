@@ -9,5 +9,5 @@ import Foundation
 import UIKit
 
 protocol WeatherViewModelProtocol {
-    func getAllWeatherData(city: String, comp: @escaping (Result<[List],HTTPError>)-> Void)
+    func getAllWeatherData<T: Codable>(city: String, forModel model: T.Type, comp: @escaping (Result<T,HTTPError>)-> Void)
 }

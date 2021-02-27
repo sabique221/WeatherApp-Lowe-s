@@ -12,20 +12,20 @@ class WeatherUnitAppTests: XCTestCase {
     
     let vc = WeatherViewController.init(city: "new york", ViewModel: MockWeatherViewModel.init(false)) //set to true to generate failure to access data
     
+    
     func test_view_model(){
         
-        let expecation = self.expectation(description: "JSON response from file was successful")
-        
-        vc.ViewModel!.getAllWeatherData(city: vc.city!) { result in
-            
-            switch result {
-            case .success(let list):
-            XCTAssertNotNil(list)
-            case .failure(let error):
-                XCTFail(error.rawValue)
+        vc.ViewModel?.getAllWeatherData(city: vc.city!, forModel: WeatherModel.self) {(result) in
+                
+                switch result {
+                case .success(let list):
+                XCTAssertNotNil(list)
+                case .failure(let error):
+                    XCTFail(error.rawValue)
+                }
+    
             }
-            expecation.fulfill()
         }
-        self.waitForExpectations(timeout: 10.0, handler: nil)
-    }
 }
+
+
