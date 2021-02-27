@@ -10,7 +10,7 @@ import UIKit
 class WeatherViewController: UIViewController {
     
     var city: String?
-    var ViewModel : WeatherViewModelProtocol?
+    lazy var ViewModel : WeatherViewModelProtocol? = WeatherViewModel()
     var lists = [List]()
     
     init(city: String, ViewModel: WeatherViewModelProtocol) {
@@ -43,7 +43,7 @@ class WeatherViewController: UIViewController {
             case .failure(let error):
                 DispatchQueue.main.async {
                     self.table.isHidden = true
-                    AlertHelper.showAlert(title: "Error", message: error.rawValue, overViewController: self)
+                    AlertHelper.shared.showAlert(title: "Error", message: error.rawValue, overViewController: self)
                 }
             }
             

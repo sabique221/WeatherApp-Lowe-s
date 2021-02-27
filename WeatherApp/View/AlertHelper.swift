@@ -11,8 +11,10 @@ import UIKit
 class AlertHelper {
     
     private init() {}
+    
+    static let shared = AlertHelper()
         
-   static func showAlert(title: String?, message: String?, overViewController vc:UIViewController){
+    func showAlert(title: String?, message: String?, overViewController vc:UIViewController){
         let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let action1 = UIAlertAction(title: "OK", style: .default) {(action: UIAlertAction!) in
             vc.navigationController?.popToRootViewController(animated: true)
