@@ -13,6 +13,7 @@ class WeatherViewController: UIViewController {
     lazy var ViewModel : WeatherViewModelProtocol? = WeatherViewModel()
     var lists = [List]()
     
+    
     init(city: String, ViewModel: WeatherViewModelProtocol) {
         super.init(nibName: nil, bundle: nil)
         self.ViewModel = ViewModel
@@ -36,8 +37,10 @@ class WeatherViewController: UIViewController {
             switch result {
             case .success(let list):
                 self.lists = list.list
+                
                 DispatchQueue.main.async {
                     self.table.reloadData()
+                    self.navigationItem.title = list.city.name + ", " + list.city.country
                     self.table.isHidden = false
                 }
             case .failure(let error):
@@ -48,7 +51,7 @@ class WeatherViewController: UIViewController {
             }
             
         }
-        self.navigationItem.title = city!.capitalized.replacingOccurrences(of: "+", with: " ")
+
         navigationController?.navigationBar.clearsContextBeforeDrawing = true
         navigationController?.navigationBar.clipsToBounds = true
         navigationController?.navigationBar.backgroundColor = UIColor.systemBlue
